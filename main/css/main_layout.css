@@ -4,16 +4,31 @@
 header{height:109px;background-color:#000;border-bottom:1px solid #ffffff;}
 
 .wrap{overflow:hidden;width:100%;max-width:1170px;margin:0 auto;/* outline:2px solid #fff; */}
-
+header .wrap{
+    display:flex;
+    
+}
 /* logo */
 .logo{display:inline-block;float:left;padding:30px 0 17px 35px;}
 
 /* gnb */
-.gnb{display:inline-block;float:left;margin-left:320px;}
+.gnb{display:inline-block;float:left;margin-left: 146px;}
 .gnb ul li{display:inline-block;float:left;text-align:center;}
 .gnb ul li a{padding:42px 0 41px;font-size:18px;font-weight:600;color:#ffffff;line-height:26px;letter-spacing:0;}
 .gnb ul li:not(:first-child){margin-left:126px;}
 
+/* buttonArea */
+.buttonArea{
+    display: flex;
+    color: #fff;
+}
+.buttonArea a{display:inline-block;color:#fff;
+    padding: 42px 0 41px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0;}
+.buttonArea a + a{margin-left:5px;}
 .rowgroup1{/* min-height:622px; */background:rgb(60,77,66);background:radial-gradient(circle, rgba(60,77,66,1) 0%, rgba(18,13,12,1) 100%);}
 .rowTitle{margin:60px 0 27px 66px;font-size:20px;line-height:1em;color:#ffffff;}
 
