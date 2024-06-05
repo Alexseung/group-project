@@ -1,0 +1,78 @@
+body {background-color:#252451;}
+
+header.black{padding: 11px 0 12px;background-color:#000000;}
+li {list-style:none; display:inline-block;}
+.navbar.black{background-color:#000000 !important;}
+.nav-link{text-decoration:none; color:rgb(125, 125, 125); font-size:15px;}
+header .navbar-expand-lg .navbar-nav{margin-left:auto;}
+header .navbar-expand-lg .navbar-nav .nav-link{font-size:18px;color:#ffffff;}
+a.nav-link{color:#7d7d7d;}
+.nav-link:hover {color:black;}
+.age-12 {width:23px; height:23px; background-image:url(https://img.megabox.co.kr/static/pc/images/common/txt/12_46x46.png); background-size:23px 23px;}
+.age-15 {width:23px; height:23px; background-image:url(https://img.megabox.co.kr/static/pc/images/common/txt/15_46x46.png);background-size:23px 23px;}
+.age-all {width:23px;height:23px;background-image:url(https://img.megabox.co.kr/static/pc/images/common/txt/ALL_46x46.png);background-size:23px 23px;}
+.age-19 {width:23px;height:23px;background-image:url(https://img.megabox.co.kr/static/pc/images/common/txt/19_46x46.png);background-size:23px 23px;}
+  
+/* 영화관 사진 */
+#carouselExampleSlidesOnly{max-width:980px;margin:0 auto;}/*20240606 추가*/
+.carousel-item img {height:420px;}
+
+/* 상영 시간표 */ 
+.first-movie {border-top:2px solid black;}  
+.first-movie li:nth-child(1){vertical-align:top;padding-left: 2rem;}
+.timetable {width:980px;background-color:white;margin-top:20px;}
+  
+.show {border:2px solid #3e82a4;color:#3e82a4;font-size:14px;}
+  
+.title {font-size:18px;font-family:'Noto Sans KR', 'CJONLYONENEW', '맑은 고딕', '돋움', Dotum, sans-serif;}
+.movieGenre {font-size:12px;}
+.movieGenre + div{margin-top: 4px;}
+.movieGenre + div:after{content:'';display:table;clear:both;}
+.movieInfo {font-size:12px;border-right:2px solid rgb(158, 158, 158);padding-right:10px;}
+.movieSeat {font-size:12px;}
+  
+.time {margin-top: 10px;margin-left: 30px;padding-left: 2rem;}
+.time strong {display:block;font-family:verdana, sans-serif;font-size:12px;}
+.time span {display:block;font-size:11px;text-align:center;}
+.time > ul > li {border:1px solid #aaa;width:50px;height:42px;text-align:center;}  
+.time a {display:block;position:relative;color:inherit;text-decoration:none;}
+.time a:hover {cursor:pointer;}
+.time a:hover .hover-image {display:block;}
+  
+.hover-image {display:none;position:absolute;top:-110px;left:50%;transform:translateX(-50%);width:150px;height:100px;}
+  /* 작은 좌석표 */
+  
+  /* ------------------- */
+  
+  /* .rank {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 150px;
+    color: #fff;
+    padding: 10px 0 0 15px;
+    line-height: 1.1;
+    font-size: 2em;
+    font-style: italic;
+    font-family: 'Roboto';
+    font-weight: 300;
+    color: #fff;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+    background: url(../images/main/bg-main-movie-rank.png) no-repeat 0 0;
+  }
+  
+  .grade-box {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    width: 28px;
+    height: 28px;
+  }
+  
+  .grade {
+    width: 28px;
+    height: 28px;
+    background-image: url(https://img.megabox.co.kr/static/pc/images/common/txt/12_56x56.png);
+    background-size: 28px 28px;
+  } */
