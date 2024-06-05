@@ -28,15 +28,20 @@
         <!-- 이메일, 비밀번호 -->
         <div class="checkBox">
             <label for="email">이메일</label>
-           <input type="email" />
-           <label for="password">비밀번호</label>
-           <input type="password" />
-           <label for="passwordCheck">비밀번호 확인</label>
-           <input type="password" />
+            <input type="email" id="email" required />
+            <span id="emailError" class="error">유효한 이메일 주소를 입력하세요.</span>
+
+            <label for="password">비밀번호</label>
+            <input type="password" id="password" minlength="8" required />
+            <span id="passwordError" class="error">비밀번호는 최소 8자 이상이어야 합니다.</span>
+
+            <label for="passwordCheck">비밀번호 확인</label>
+            <input type="password" id="passwordCheck" required />
+            <span id="passwordCheckError" class="error">비밀번호가 일치하지 않습니다.</span>
         </div>
 
         <div>
-            <button onclick="showAlert()">이메일 인증하기</button>
+            <button onclick="validateForm()">이메일 인증하기</button>
         </div>
 
     </div>
@@ -44,6 +49,44 @@
     <script>
         function showAlert() {
           alert('아직 못 만들었습니다! 다음에 가입하세요!')
+        }
+
+        
+        function validateForm() {
+            const email = document.getElementById('email');
+            const password = document.getElementById('password');
+            const passwordCheck = document.getElementById('passwordCheck');
+
+            let valid = true;
+
+            // 이메일 유효성 검사
+            if (!email.checkValidity()) {
+                document.getElementById('emailError').style.display = 'block';
+                valid = false;
+            } else {
+                document.getElementById('emailError').style.display = 'none';
+            }
+
+            // 비밀번호 유효성 검사
+            if (!password.checkValidity()) {
+                document.getElementById('passwordError').style.display = 'block';
+                valid = false;
+            } else {
+                document.getElementById('passwordError').style.display = 'none';
+            }
+
+            // 비밀번호 확인 검사
+            if (password.value !== passwordCheck.value) {
+                document.getElementById('passwordCheckError').style.display = 'block';
+                valid = false;
+            } else {
+                document.getElementById('passwordCheckError').style.display = 'none';
+            }
+
+            if (valid) {
+                alert('유효성 검사 통과');
+                // 여기서 폼 제출 로직을 추가할 수 있습니다.
+            }
         }
       </script>
 </body>
