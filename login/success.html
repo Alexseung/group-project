@@ -4,8 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="style.css" rel="stylesheet" />
 </head>
 <body>
-    온건가?
+    <div class="successBox">
+        
+            <img src="../login/image/check.gif" alt="">
+            <h1>이메일 인증</h1>
+            <p>당신의 이메일 유효성 검사는 확인 되었습니다.</p>
+            <button class="successButton" onclick="redirectToMain()">메인으로 이동하기</button>
+    </div>
+
+
+    <!-- script -->
+
+    <script>
+        function redirectToMain() {
+            window.location.href = '../index.html'; // 바깥 폴더에 있는 index.html로 이동
+        }
+    </script>
 </body>
 </html>
