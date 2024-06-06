@@ -193,3 +193,69 @@ button:hover {
     box-shadow: 0 8px 16px rgba(0,0,0,0.1), 0 16px 32px rgba(0,0,0,0.1), 0 32px 64px rgba(0,0,0,0.1);
     box-sizing: border-box; /* 전체 박스 크기를 맞추기 위해 추가 */
 }
+
+/* 시작 페이지 */
+
+.startPageBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 15px;
+    height: 700px;
+    width: 400px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1), 0 16px 32px rgba(0,0,0,0.1), 0 32px 64px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    text-align: center; /* 텍스트 중앙 정렬 */
+}
+
+.startPageBox h1 {
+    font-size: 1.1em; /* 큰 글씨 */
+    margin-top: 20px; /* 텍스트 사이 간격 */
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+
+.startPageBox p {
+    font-size: 1.4em; /* 작은 글씨 */
+    margin-top: 0px;
+    font-weight: bold;
+}
+
+.joinButton {
+    padding: 10px 20px; /* 버튼 내부 여백 */
+    font-size: 1em; /* 글꼴 크기 */
+    color: white; /* 글자 색상 */
+    background-color: #007bff; /* 배경 색상 */
+    border: none; /* 테두리 제거 */
+    border-radius: 15px; /* 둥근 모서리 */
+    cursor: pointer; /* 커서 모양 변경 */
+    outline: none; /* 포커스 시 아웃라인 제거 */
+    margin-top: 100px; /* 위쪽 마진 (위 요소와의 간격) */
+    margin-bottom: 20px;
+}
+
+.joinButton:hover {
+    background-color: #0056b3; /* 호버 시 배경 색상 변경 */
+}
+
+/* 슬라이드 이미지 */
+.slider {
+    width: 100%;
+    height: 100%; /* 슬라이더 높이 조정 */
+    overflow: hidden;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #000; /* 필요에 따라 배경색 설정 */
+    border-radius: 20px; /* 둥근 테두리 적용 */
+}
+
+.slides img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* 이미지가 슬라이더 크기에 맞춰 조정되도록 설정 */
+    border-radius: inherit; /* 부모의 border-radius 상속 */
+}
