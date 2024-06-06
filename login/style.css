@@ -182,3 +182,14 @@ button:hover {
 .successButton:hover {
     background-color: #0056b3; /* 호버 시 배경 색상 변경 */
 }
+
+/* 로그인 페이지 */
+.signInBox {
+    border: 2px solid black;
+    border-radius: 15px;
+    height: 700px;
+    width: 400px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1), 0 16px 32px rgba(0,0,0,0.1), 0 32px 64px rgba(0,0,0,0.1);
+    box-sizing: border-box; /* 전체 박스 크기를 맞추기 위해 추가 */
+}
