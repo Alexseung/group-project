@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./login.css">
 </head>
 
 <body class="login">
@@ -29,21 +30,72 @@
                 </ul>
             </div>
             <div class="buttonArea">
-                <a href="#n">Login</a>
-                <a href="#n">Sign in</a>
+                <a href="./login.html">Login</a>
+                <a href="./signup.html">Sign in</a>
             </div>
         </div>
     </header>
-    <div class="nameCheck">
-        <div class="loginBox">
-            <div class="inputGroup">
-                <input type="text" placeholder="아이디를 입력하세요.">
+    <div class="wrap">
+        <div class="signInBox">
+            <a class="backButton" href="/">
+                <i class="fa-solid fa-left-long fa-2x"></i>
+            </a>
+            <div class="singUp">로그인</div>
+    
+            <div class="checkBox">
+                <label for="email">이메일</label>
+                <input type="email" id="email" required="">
+                <span id="emailError" class="error">유효한 이메일 주소를 입력하세요.</span>
+    
+                <label for="password">비밀번호</label>
+                <input type="password" id="password" minlength="8" required="">
+                <span id="passwordError" class="error">비밀번호는 최소 8자 이상이어야 합니다.</span>
+            </div>
+    
+            <div>
+                <button onclick="loginForm()">로그인</button>
+                <button id="signUpButton">회원가입</button>
             </div>
         </div>
     </div>
-    <div class="backButton">
-        backButton
-    </div>
+    <script>
+        function showAlert() {
+            alert('인증에 성공했습니다.')
+        }
+
+        document.getElementById('signUpButton').addEventListener('click', function () {
+            window.location.href = 'signup.html';
+        });
+
+
+        function loginForm() {
+            const email = document.getElementById('email');
+            const password = document.getElementById('password');
+            let valid = true;
+
+            // 이메일 유효성 검사
+            if (!email.checkValidity()) {
+                document.getElementById('emailError').style.display = 'block';
+                valid = false;
+            } else {
+                document.getElementById('emailError').style.display = 'none';
+            }
+
+            // 비밀번호 유효성 검사
+            if (!password.checkValidity()) {
+                document.getElementById('passwordError').style.display = 'block';
+                valid = false;
+            } else {
+                document.getElementById('passwordError').style.display = 'none';
+            }
+
+            if (valid) {
+                alert('로그인 완료.');
+                window.location.href = '../index.html';
+                // 여기서 폼 제출 로직을 추가할 수 있습니다.
+            }
+        }
+    </script>
 </body>
 
 </html>

@@ -1,21 +1,20 @@
-
 @charset "UTF-8";
 
-@import url(../../main/css/main.css);
+@import url(../main/css/style.css);
 
 html {
     height: 100%;
     margin: 0;
-    /* display: flex; */
-    justify-content: center;
-    align-items: center;
+    /* display: flex; flex해제 20240606 */
+    /* justify-content: center; */
+    /* align-items: center; */
 }
 
 body {
-    /* height: 100%; */
+    height: 100%;
     margin: 0;
-    /* display: flex; */
-    justify-content: center;
+    /* display: flex; flex해제 20240606*/ 
+    /* justify-content: center; */
     /* align-items: center; */
     /* background-image: url('./image/back.jpg'); */
     background-size: cover; /* 배경 이미지가 body 전체를 커버하도록 설정 */
@@ -24,27 +23,48 @@ body {
     color: black;
 }
 
-body.login{
-    /* flex-direction:column; */
-}
+
 .nameCheck {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .loginBox {
-    
      /* 전체 박스 크기를 맞추기 위해 추가 */
 }
 
 .inputGroup {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    font-weight: bold;
 }
 
 .singUp {
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    font-weight: bolder;
 }
 
 .checkBox {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 00;
 }
 
 input[type="text"], input[type="email"], input[type="password"] {
+    margin: 15px 0 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: calc(100% - 22px);
+    box-sizing: border-box;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
 }
 
 button {
@@ -66,12 +86,26 @@ button:hover {
 
 
 .backButton {
+    display: inline-block;
+    padding: 10px 20px;
+    color: black;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
 }
 
 
 /* 기본 스타일 */
 .loginBox {
-     /* 전체 박스 크기를 맞추기 위해 추가 */
+    border: 1px solid black;
+    border-radius: 15px;
+    height: auto;
+    width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1), 0 16px 32px rgba(0,0,0,0.1), 0 32px 64px rgba(0,0,0,0.1);
+    box-sizing: border-box; /* 전체 박스 크기를 맞추기 위해 추가 */
 }
 
 /* 화면 너비가 768px 이하일 때 적용될 스타일 */
@@ -91,6 +125,11 @@ button:hover {
 }
 
 .error {
+    display: none;
+    color: red;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-size: 12px;
 }
 
 
@@ -142,3 +181,19 @@ button:hover {
 .successButton:hover {
     background-color: #0056b3; /* 호버 시 배경 색상 변경 */
 }
+
+/* 로그인 페이지 */
+
+
+.signInBox {
+    border: 2px solid black;
+    border-radius: 15px;
+    height: 700px;
+    width: 400px;
+    margin:20px auto;/*margin 간격 조정 : auto를 통해 좌우 간격 배치*/
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1), 0 16px 32px rgba(0,0,0,0.1), 0 32px 64px rgba(0,0,0,0.1);
+    box-sizing: border-box; /* 전체 박스 크기를 맞추기 위해 추가 */
+}
+
+.loginBox button[onclick="validateForm()"]{margin-top:0;}
