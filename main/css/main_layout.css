@@ -88,7 +88,7 @@ header .wrap{display:flex;}
 .blackBg{opacity:0;visibility:hidden;position:absolute;top:0;left:0;width:100%;height:calc(100% - 0px);padding-top: 2rem;padding-left: 1rem;border-radius:12px;background-color:rgba(0,0,0,0.8);color: #ffffff;transition:opacity 300ms ease-in .2s, visibility 300ms ease-in .3s;text-align: center;}
 
 
-.rowgroup2{padding-bottom: 90px;background-color:#fff;}
+.rowgroup2{padding-bottom: 90px;background-color:#fff;border-bottom: 1px solid;}
 .rowgroup2 .wrap{padding:0 47px 0 60px;}
 .rowgroup2 .rowTitle{color:#000;margin-left:0;}
 .rowgroup2 .theaterContents{}
@@ -120,13 +120,23 @@ header .wrap{display:flex;}
     transition:all 0.3s ease-in;
 }
 .rowgroup3{
-    min-height:453px;
+    overflow: hidden;
+    /* min-height:453px; */
+    padding-bottom: 3rem;
     background-color:#000000;
 }
-.eventList{display:flex;justify-content:center;gap:64px;}
-.eventList .eventItem{display:inline-block;width:249px;height:246px;border-radius:10px;background-color:#46178c;}
+.rowgroup3 .wrap{overflow:visible;}
+.eventList{display:flex;justify-content:center;flex-wrap: wrap;gap:64px;}
+.eventList .eventItem{display:inline-block;overflow: hidden;width:249px;height:auto;border-radius:10px;background-color: #fff;}
+.eventList .eventItem img{width:100%;object-fit:cover;object-position:center left;}
+.eventList .eventItem .card-body{padding: 16px;box-sizing: border-box;/* background: #ffffff; */}
+.eventList .eventItem .card-body .card-text{margin-bottom:16px;font-size:16px;font-family: "Noto Sans KR", sans-serif;font-weight: 600;word-break: keep-all;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
 
-
+/* slick */
+.eventList .slick-prev, .eventList .slick-next {width:60px;height:60px;background:#fff;border-radius:50%;z-index:1;}
+.slick-slide {margin:0 10px;}
+.slick-list {margin:0 -10px;}
+.eventList .slick-prev:hover, .eventList .slick-prev:focus, .eventList .slick-next:hover, .eventList .slick-next:focus {background:#ffffff;}
 
 @media all and (max-width:1187px){
     .movieList .movieItem{width:calc((100% - 141px)/4);}
@@ -224,3 +234,5 @@ header .wrap{display:flex;}
     .movieList .movieItem + .movieItem{margin-left: 5px;}
     .movieList .movieItem img{width: 100%;border-radius:calc(100vw * (12 / 449));}
 }
+
+
