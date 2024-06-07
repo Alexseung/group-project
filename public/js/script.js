@@ -65,6 +65,43 @@ document.addEventListener('DOMContentLoaded', function() {
 
 		});
 
+        //ajax
+        $(document).ready(function(){
+            $.ajax({
+                url: './event/index.html',
+                method: 'GET',
+                success: function(data) {
+                    var $html = $(data);
+                    var cards = $html.find('.card');
+                    var eventList = $('.eventList');
+                    eventList.empty(); // .eventList 내용을 비웁니다.
+        
+                    cards.each(function(index) {
+                        var cardElement = $(this).clone();
+                        var imgElement = cardElement.find('img');
+                        var src = imgElement.attr('src');
+                        imgElement.attr('src', src.replace('./images/', './event/images/'));
+        
+                        // .eventItem 요소를 생성하고 .card 요소를 추가합니다.
+                        var eventItem = $('<div class="eventItem"></div>').append(cardElement);
+                        eventList.append(eventItem);
+                    });
+
+                    eventList.slick({
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        autoplay: true,
+                        autoplaySpeed: 2000,
+                        dots: true,
+                        arrows: true,
+                    });
+                },
+                error: function(error) {
+                    console.log('Error fetching the cards:', error);
+                }
+            });
+        });
+        
 	});
 
 })(window.jQuery);
