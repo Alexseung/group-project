@@ -1,0 +1,174 @@
+html,
+body {
+    min-height: 2200px;
+}
+
+body {
+    min-height: 2200px;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #4d4d4d;
+}
+
+.btn-outline-success {
+    color: chocolate;
+    border: chocolate 1px solid;
+}
+
+.btn-outline-success:hover {
+    background-color: chocolate;
+    color: #fff;
+    border: 1px solid chocolate;
+}
+
+.hhh-512 {
+    height: 700px;
+}
+
+.carouselWrapper {
+    width: 100%;
+    height: 500px;
+    background-color: #f0f0f0;
+}
+
+.eventMenu {
+    border-bottom: 1px solid #eeeeee;
+    height: 41.5px;
+    display: flex;
+    margin: auto;
+    margin-top: 100px !important;
+    padding-top: 10px;
+    margin-bottom: 40px !important;
+}
+
+.eventMenuBox1 {
+    width: 80%;
+}
+
+.eventMenuBox2 {
+    min-width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.h-auto {
+    height: auto;
+}
+
+.h-400 {
+    height: 400px;
+}
+
+.w-1300 {
+    max-width: 1300px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.footer {
+    background-color: #eee;
+    color: #5b5b5b;
+    height: 300px;
+    width: 100vw;
+    margin-top: 100px;
+}
+
+@media screen and (max-width: 48rem) {
+    .first-line {
+        text-align: center;
+    }
+
+    .second-line {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .third-line {
+        display: block;
+        text-align: center;
+    }
+}
+
+.row {
+    margin-bottom: 24px;
+}
+
+.card-text {
+    color: #000;
+    font-weight: 500;
+    font-size: 16px;
+    /* /* padding: 14px 12px; */
+}
+
+.card-text2 {
+    color: #6a6f77;
+    font-weight: 500;
+    font-size: 13px;
+    padding-top: 30px;
+}
+
+.card-body {
+    height: 108px;
+}
+
+.redPoint {
+    color: #fb4357;
+}
+
+.card-head {
+    overflow: hidden;
+}
+
+.card-img-top {
+    transition: all 300ms;
+}
+
+.card-img-top:hover {
+    transform: scale(1.1);
+}
+
+.carouselBtnStyle {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 50%;
+    background-color: #7c7c7c !important;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 0;
+    line-height: 0;
+    border-radius: 100%;
+    box-shadow: 4px 4px 10px 0 rgba(45, 45, 45, 0.3);
+    background-color: transparent;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.carouselBtnStyle:hover {
+    background-color: rgb(159, 52, 247) !important;
+}
+
+.movetop {
+    overflow: hidden;
+    display: block;
+    position: fixed;
+    z-index: 2;
+    right: 3%;
+    bottom: 25px;
+    width: 48px;
+    height: 48px;
+    margin: 0 0 0 550px;
+    text-indent: -9999px;
+    border-radius: 48px;
+    background: url(https://img.megabox.co.kr/static/pc/images/common/btn/btn-go-top.png) no-repeat 0 0;
+    box-shadow: 1px 1px 7px 0 rgba(0, 0, 0, 0.5);
+}
+
+.changePositon {
+    position: absolute;
+    bottom: 425px;
+}
