@@ -233,7 +233,8 @@ li {
 .nav-link {
   text-decoration: none;
   color: rgb(125, 125, 125);
-  font-size: 15px;
+  font-size: 14px;
+  font-weight: 600;
 }
 .nav-link:hover {
   color: black;
