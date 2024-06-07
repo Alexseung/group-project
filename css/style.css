@@ -267,6 +267,7 @@ li {
 }
 
 /* 영화관 사진 */
+
 .carousel-item img {
   height: 420px;
 }
@@ -337,23 +338,17 @@ li {
   display: block;
   position: relative;
 }
-.time a:hover {
+
+.time > ul > li:hover,
+.time > ul > li:hover a {
+  background-color: #252451;
   cursor: pointer;
+  color: white;
 }
-
-.time a:hover .hover-image {
-  display: block;
+.time > ul > li.soldout:hover,
+.time > ul > li.soldout:hover a {
+  background-color: red;
 }
-
-.hover-image {
-  display: none;
-  position: absolute;
-  top: -40px;
-  left: 50%;
-  width: 400px;
-  height: 100px;
-}
-
 .carousel {
   left: 12%;
   position: relative;
@@ -376,6 +371,11 @@ li {
   display: none;
 }
 
+@media (max-width: 1400px) {
+  .theaterImg {
+    display: none;
+  }
+}
 /* 작은 좌석표 */
 
 /* ------------------- */
