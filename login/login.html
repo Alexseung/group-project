@@ -4,16 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="./login.css" rel="stylesheet" />
+    <link href="./login.css" rel="stylesheet">
+    <title>Document</title>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../public/js/script.js"></script>
 </head>
 <body>
     <div class="signInBox">
-        <a class='backButton' href='/group-project/'>
+        <a class="backButton" href="/group-project/">
             <i class="fa-solid fa-left-long fa-2x"></i>
         </a>
-        <div class="singUp">로그인</div>
+        <div class="singUp login">로그인</div>
 
         <div class="checkBox">
             <label for="email">이메일</label>
@@ -24,23 +26,19 @@
             <input type="password" id="password" minlength="8" required />
             <span id="passwordError" class="error">비밀번호는 최소 8자 이상이어야 합니다.</span>
         </div>
-
-        <div>
+        <div class="loginFormCheck">
             <button onclick="loginForm()">로그인</button>
             <button id="signUpButton">회원가입</button>
         </div>
     </div>
-
-
     <script>
         function showAlert() {
-          alert('인증에 성공했습니다.')
+            alert('인증에 성공했습니다.')
         }
 
         document.getElementById('signUpButton').addEventListener('click', function() {
             window.location.href = 'signup.html';
         });
-
         
         function loginForm() {
             const email = document.getElementById('email');
@@ -69,6 +67,6 @@
                 // 여기서 폼 제출 로직을 추가할 수 있습니다.
             }
         }
-      </script>
+    </script>
 </body>
 </html>
