@@ -54,9 +54,14 @@ input[type="text"], input[type="email"], input[type="password"] {width:calc(100%
     label[for="lastName"]{display:block;}
 }
 
+/* 화면 너비가 640px 이하일 때 적용될 스타일 */
+@media (max-width:640px) {
+    .loginBox{width:calc(100vw * (520 / 640));}
+}
+
 /* 화면 너비가 480px 이하일 때 적용될 스타일 */
 @media (max-width:480px) {
-    .loginBox {width:95%; /* 더 작은 화면에 맞게 너비를 늘림 */}
+    .loginBox {width:calc(100vw * (410 / 480)); /* 더 작은 화면에 맞게 너비를 늘림 */}
 }
 
 /*
