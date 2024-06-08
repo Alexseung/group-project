@@ -46,7 +46,12 @@ input[type="text"], input[type="email"], input[type="password"] {width:calc(100%
 
 /* 화면 너비가 768px 이하일 때 적용될 스타일 */
 @media (max-width:768px) {
-    .loginBox {width:90%; /* 화면 너비에 따라 박스의 너비를 조정 */height:auto; /* 내용에 맞춰 높이가 조정되도록 변경 */padding:10px; /* 화면 크기가 작을 때는 패딩을 줄임 */    }
+    .loginBox{width:calc(100vw * (520 / 768));/* 화면 너비에 따라 박스의 너비를 조정 */height:auto; /* 내용에 맞춰 높이가 조정되도록 변경 */padding:10px;/* 화면 크기가 작을 때는 패딩을 줄임 */}
+    
+    /*성 | 이름 입력*/
+    .nameCheck {display:block;width:100%;}
+    .inputGroup {display:block;width:100%;}
+    label[for="lastName"]{display:block;}
 }
 
 /* 화면 너비가 480px 이하일 때 적용될 스타일 */
