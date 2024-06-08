@@ -57,6 +57,17 @@ input[type="text"], input[type="email"], input[type="password"] {width:calc(100%
 /* 화면 너비가 640px 이하일 때 적용될 스타일 */
 @media (max-width:640px) {
     .loginBox{width:calc(100vw * (520 / 640));}
+    .loginFormCheck button,.validateBtn button{width:100%;}
+    /*
+    * 이메일, 비밀번호 입력란 :login,signup 공통 적용
+    */
+    input[type="text"], input[type="email"], input[type="password"] {width:100%;}
+}
+
+/* 화면 너비가 530px 이하일 때 적용될 스타일 */
+@media (max-width:530px) {
+    /* 로그인 페이지 :전체 틀*/
+    .signInBox {width:calc(100vw * (500 / 530));padding:calc(100vw * (20 / 530)) calc(100vw * (20 / 530)) calc(100vw * (45 / 530)) calc(100vw * (20 / 530));}
 }
 
 /* 화면 너비가 480px 이하일 때 적용될 스타일 */
