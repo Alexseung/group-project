@@ -30,10 +30,10 @@
         </h1>
         <div class="gnb">
           <ul class="clearfix">
-            <li><a href="#n">Home</a></li>
+            <li><a href="../index.html">Home</a></li>
             <li><a href="#n">Movies</a></li>
-            <li><a href="../Theater/theater.html">Theaters</a></li>
-            <li><a href="#n">Events</a></li>
+            <li><a href="./index.html">Theaters</a></li>
+            <li><a href="../event/index.html">Events</a></li>
           </ul>
         </div>
         <div class="buttonArea">
@@ -94,7 +94,6 @@
             />
           </div>
         </div>
-
         <button
           class="carousel-control-prev carouselBtnStyle"
           type="button"
@@ -115,9 +114,7 @@
         </button>
       </div>
     </div>
-
     <!-- 문구추가 -->
-
     <!-- 상품리스트(그리드) -->
     <div class="container mt-5">
       <div class="row">
@@ -134,7 +131,6 @@
             </div>
           </div>
         </div>
-
         <div class="col-lg-4 col-mb-4 col-sm-12">
           <div class="card">
             <div class="card-head">
@@ -168,14 +164,24 @@
         <div class="col-lg-4 col-mb-4 col-sm-12">
           <div class="card">
             <div class="card-head">
-               <a href="http://www.cgv.co.kr/culture-event/event/detailViewUnited.aspx?seq=40685&menu=001">
-              <img src="./images/events21.jpg" class="card-img-top" alt="..." />
-            </a>
+              <a
+                href="http://www.cgv.co.kr/culture-event/event/detailViewUnited.aspx?seq=40685&menu=001"
+              >
+                <img
+                  src="./images/events21.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </a>
             </div>
             <div class="card-body">
               <p class="card-text">
-                <a href="http://www.cgv.co.kr/culture-event/event/detailViewUnited.aspx?seq=40685&menu=001">
-                [나쁜녀석들] IMAX 포스터 </a> </p>
+                <a
+                  href="http://www.cgv.co.kr/culture-event/event/detailViewUnited.aspx?seq=40685&menu=001"
+                >
+                  [나쁜녀석들] IMAX 포스터
+                </a>
+              </p>
               <span class="card-text2"
                 >2024.05.29~2024.06.12 . <span class="redPoint">D-7</span></span
               >
@@ -250,7 +256,6 @@
     <div class="moveTopwrapper">
       <a href="#" class="movetop">위로이동</a>
     </div>
-
     <!-- <div class="box box1">박스1</div>
     <div class="box box2">박스2</div>
     <div class="box box3">박스3</div>
@@ -262,14 +267,14 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      window.addEventListener("scroll", function () {
+      window.addEventListener('scroll', function () {
         console.log(window.scrollY);
-        let topBtn = document.querySelector(".movetop");
+        let topBtn = document.querySelector('.movetop');
         let elementPosition = topBtn.offsetTop;
         if (window.scrollY > 1300.25) {
-          topBtn.style.position = "absolute";
+          topBtn.style.position = 'absolute';
         } else if (window.scrollY <= 1300.25) {
-          topBtn.style.position = "fixed";
+          topBtn.style.position = 'fixed';
         }
       });
     </script>
