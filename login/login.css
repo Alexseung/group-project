@@ -41,8 +41,12 @@ input[type="text"], input[type="email"], input[type="password"] {width:calc(100%
 
 /* 이메일 인증하기 버튼  :login,signup 공통 적용*/
 .loginFormCheck,.validateBtn{text-align:center;}
-.loginFormCheck button,.validateBtn button{width:51%; /* 버튼 너비를 100%로 설정  -> 95%*/padding:20px 10px; /* 입력 박스와 동일한 패딩 값 */margin-top:10px;margin-right:auto;margin-left:auto;box-sizing:border-box; /* 패딩을 포함하여 전체 너비 계산 */border-radius:6px; /* 입력 박스와 동일한 테두리 반경 */border:none; /* 버튼 테두리 제거 */background-color:#250f47; /* 버튼 배경색 */font-size:16px;font-weight:bold;color:white; /* 버튼 글자색 */cursor:pointer; /* 마우스 오버 시 커서 변경 */}
+.loginFormCheck button,.validateBtn button{width:51%; /* 버튼 너비를 100%로 설정  -> 95%*/padding:20px 10px; /* 입력 박스와 동일한 패딩 값 */margin-top:10px;margin-right:auto;margin-left:auto;box-sizing:border-box; /* 패딩을 포함하여 전체 너비 계산 */border-radius:6px; /* 입력 박스와 동일한 테두리 반경 */border:none; /* 버튼 테두리 제거 */background-color:#250f47; /* 버튼 배경색 */font-size:16px;font-weight:bold;color:white; /* 버튼 글자색 */cursor:pointer; /* 마우스 오버 시 커서 변경 */transition:background-color 0.5s ease-in;}
 .loginFormCheck button:hover,.validateBtn button:hover{background-color:#140925; /* 버튼 호버 시 배경색 변경 */}
+
+/* 로그인 버튼 별도 색 지정 */
+.loginFormCheck [onclick="loginForm()"]{background-color:#140925;}
+.loginFormCheck [onclick="loginForm()"]:hover{background-color:#250f47;}
 
 /* 화면 너비가 768px 이하일 때 적용될 스타일 */
 @media (max-width:768px) {
