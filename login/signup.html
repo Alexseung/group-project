@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="./login.css" rel="stylesheet" />
+    <link href="./login.css" rel="stylesheet">
+    <title>회원가입 페이지</title>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../public/js/script.js"></script>
 </head>
-
 <body>
     <div class="loginBox">
         <a class='backButton' href='/group-project/'>
@@ -42,7 +42,7 @@
             <span id="passwordCheckError" class="error">비밀번호가 일치하지 않습니다.</span>
         </div>
 
-        <div>
+        <div class="validateBtn">
             <button onclick="validateForm()">이메일 인증하기</button>
         </div>
 
@@ -87,7 +87,7 @@
 
             if (valid) {
                 alert('인증 완료 되었습니다.');
-                window.location.href = 'success.html';
+                window.location.href = '../login/success.html';
                 // 여기서 폼 제출 로직을 추가할 수 있습니다.
             }
         }
