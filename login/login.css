@@ -90,7 +90,7 @@ input[type="text"], input[type="email"], input[type="password"] {width: 100%;pad
     /*
     * 이메일, 비밀번호 입력란 :login,signup 공통 적용
     */
-    input[type="text"], input[type="email"], input[type="password"] {margin:calc(100vw * (8 / 480)) 0 calc(100vw * (17 / 480));padding:calc(100vw * (18 / 480)) calc(100vw * (10 / 480));}
+    input[type="text"], input[type="email"], input[type="password"] {margin:calc(100vw * (8 / 480)) 0 calc(100vw * (17 / 480));padding: calc(100vw * (10 / 480)) calc(100vw * (10 / 480));}
 }
 
 /*
