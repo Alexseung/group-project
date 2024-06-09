@@ -108,8 +108,8 @@ header .wrap{display:flex;}
 .slick-list {margin:0 -10px;}
 .eventList .slick-prev:hover, .eventList .slick-prev:focus, .eventList .slick-next:hover, .eventList .slick-next:focus {background:#ffffff;}
 
-.eventList .slick-prev{background-image:url(../img/arrow-left-solid.svg);background-repeat:no-repeat;}
-.eventList .slick-next{background-image:url(../img/arrow-left-right.svg);background-repeat:no-repeat;}
+.eventList .slick-prev{background-image: url(../img/arrow-left-solid.svg) !important;background-repeat: no-repeat !important;background-size: 42% !important;background-position: center !important;}
+.eventList .slick-next{background-image: url(../img/arrow-right-solid.svg) !important;background-repeat: no-repeat !important;background-size: 42% !important;background-position: center !important;}
 
 @media all and (max-width:1330px){
     .modalBox .modal iframe{height:calc(100vw * (340 / 1300));}
