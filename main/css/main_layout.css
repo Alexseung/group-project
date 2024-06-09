@@ -111,6 +111,9 @@ header .wrap{display:flex;}
 .eventList .slick-prev{background-image: url(../img/arrow-left-solid.svg) !important;background-repeat: no-repeat !important;background-size: 42% !important;background-position: center !important;}
 .eventList .slick-next{background-image: url(../img/arrow-right-solid.svg) !important;background-repeat: no-repeat !important;background-size: 42% !important;background-position: center !important;}
 
+#footer{padding:3rem 0;background-color:#9e9e9e;text-align:center;}
+#footer .copyright{font-size:16px;font-weight:400;line-height:22px;color:#ded5d5;vertical-align: middle;}
+
 @media all and (max-width:1330px){
     .modalBox .modal iframe{height:calc(100vw * (340 / 1300));}
 }
