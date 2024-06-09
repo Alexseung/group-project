@@ -89,7 +89,7 @@ header .wrap{display:flex;}
 
 /* modal popup */
 .modalBox{display:flex;justify-content:center;align-items:center;position:fixed;top:0;left:0;z-index:11;width:100%;height:100%;background-color:rgba(0,0,0,0.5);}
-.modalBox .modal{position:relative;width: 50%;padding:20px;display: block;}
+.modalBox .modal{position:relative;top: calc(50% - -100px);width: 50%;padding:20px;display: block;transform: translateY(-50%);}
 .modalBox .modal iframe{width:100%;height: 510px;}
 .modalBox .modal .closeBtn{position:absolute;top:0;right:0;width:50px;height:50px;background-color:#efefef;border:0;}
 
@@ -146,6 +146,10 @@ header .wrap{display:flex;}
     .buttonArea a{font-size:calc(100vw * (16 / 1130));}
 }
 
+@media all and (max-width:1105px){
+    .modalBox .modal{width:62%;}
+    .modalBox .modal iframe{height:calc(100vw * (360 / 1000));}
+}
 @media all and (max-width:1060px){
     .rowgroup2 .wrap{padding:0 calc(100vw * (47 / 1060)) 0 calc(100vw * (60 / 1060));}
     .rowgroup2 .theaterContents .leftBox{width:calc(100vw * (605 / 1060));height:calc(100vw * (264 / 1060));border-radius:calc(100vw * (10 / 1060));}
@@ -179,6 +183,7 @@ header .wrap{display:flex;}
     .rowgroup2 .theaterContents .rightBox ul li span{font-size:calc(100vw * (14 / 1000));}
 
     .modalBox .modal{width:100%;}
+    .modalBox .modal iframe{height:calc(100vw * (545 / 1000));}
 }
 
 @media screen and (max-width:750px){
