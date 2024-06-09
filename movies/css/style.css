@@ -61,77 +61,51 @@ header .wrap{display:flex;}
 .buttonArea a + a{}
 
 .view_container{max-width:1170px;margin:0 auto;}
-
-.sect-base-movie:after {display:table;clear:both;content:'';}
-.box-image a {display:block;}
-.box-image img {width:100%;}
+[class|="sect-base"]{padding-top:40px;}
+[class|="sect-base"]:after {display:table;clear:both;content:'';}
+[class|="sect-base"] .box-image {float:left;margin-right:30px;width:185px;height:260px;}
+[class|="sect-base"] .box-image a {display:block;}
 .thumb-image {display:block;position:relative;}
+[class|="sect-base"] .box-image img {width:100%;}
+
 .thumb-image .cgvIcon.etc {position:absolute;left:5px;top:5px}
-[class|="sect-base"] .box-image {float:left;}
+
 [class|="sect-base"] .box-contents {float:left;position:relative;}
+.title {display:block;color:#333333;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;}
 [class|="sect-base"] .title strong {font-size:25px;color:#1a1919;vertical-align:middle;}
 [class|="sect-base"] .title p {color: #666666;}
 [class|="sect-base"] .title em {margin-left: 12px;}
-[class|="sect-base"] .title em.round-red span {
-    font-family: Verdana, Geneva, sans-serif;
-    font-weight: bold;
-    line-height: 23px;
-}
+[class|="sect-base"] .title em.round-red span {font-family:Verdana, Geneva, sans-serif;font-weight:bold;line-height:23px;}
 
-[class|="sect-base"] .score {
-    margin-top: 25px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #d9d6c8;
-    font-size: 14px;
-}
+[class|="sect-base"] .score {margin-top:25px;padding-bottom:10px;border-bottom:1px solid #d9d6c8;font-size:14px;}
+[class|="sect-base"] .point {margin:0 4px 0 2px;padding-left:7px;background:url('../images/common/bg/bg_writeinfo.gif') 0 3px no-repeat;}
+[class|="sect-base"] .point ul {margin-left:3px;}
+[class|="sect-base"] .point li {margin-top:2px;}
+[class|="sect-base"] .screentype {position:absolute;right:0;top:150px;}
 
-[class|="sect-base"] .point {
-    margin: 0 4px 0 2px;
-    padding-left: 7px;
-    background: url('../images/common/bg/bg_writeinfo.gif') 0 3px no-repeat;
-}
+[class|="sect-base"] .screentype a {margin-left:9px;}
+[class|="sect-base"] .sns {position:absolute;right:0;top:0;}
+[class|="sect-base"] .like {margin-top:22px;}
 
-[class|="sect-base"] .point ul {
-    margin-left: 3px;
-}
+[class|="sect-base"][class$="movie"] .box-image{ margin-right:30px;width:185px;height:260px}
+[class|="sect-base"][class$="movie"] .thumb-image img{ width:185px; height:260px;}
+[class|="sect-base"][class$="movie"] .box-contents{ width:765px; }
+[class|="sect-base"][class$="movie"] .box-contents .like > .round {margin-left:4px; font-size:15px; line-height:29px; vertical-align:middle;}
+[class|="sect-base"][class$="movie"] .box-contents .like > .round > * {padding:0 10px;}
+[class|="sect-base"][class$="movie"] .spec{ padding-top:18px; line-height:1.6;}
+[class|="sect-base"][class$="movie"] .spec:after{ content:''; display:block; clear:both;}
+[class|="sect-base"][class*="movie"] .spec dd{ float:left;}
+[class|="sect-base"][class*="movie"] .spec dd {white-space:normal; text-overflow:clip; overflow:visible;}
+[class|="sect-base"][class$="movie"] .spec .on{ float:none; } 
+[class|="wrap-movie"][class$="detail"] .heading{ margin-bottom:20px;}
+[class|="wrap-movie"][class$="detail"] [class^="sect-"]{ padding-top:40px;}
+[class|="wrap-movie"][class$="detail"] .showtimes-wrap .sect-city{ margin-top:20px;}
+[class|="wrap-movie"][class$="detail"] .showtimes-wrap .sect-schedule{ margin-top:0;}
+[class|="wrap-movie"][class$="detail"] .showtimes-wrap .sect-guide{ margin-top:0;}
+[class|="sect-story"][class*="movie"]{ margin-top:35px; color:#333333; line-height:1.8;}
+[class|="sect-story"][class*="movie"] strong{ font-size:13px; }
+[class|="sect-story"][class*="movie"] p{ margin-top:10px; font-size:12px; line-height:2;}
 
-[class|="sect-base"] .point li {
-    margin-top: 2px;
-}
-
-[class|="sect-base"] .screentype {
-    position: absolute;
-    right: 0;
-    top: 150px;
-}
-
-[class|="sect-base"] .screentype a {
-    margin-left: 9px;
-}
-
-[class|="sect-base"] .sns {
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-
-[class|="sect-base"] .like {
-    margin-top: 22px;
-}
-
-.title {
-    display: block;
-    color: #333333;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-[class|="sect-base"] .title strong {
-    color: #1a1919;
-    font-size: 25px;
-    vertical-align: middle;
-}
 
 .cols-content{margin-top:30px;padding-top:25px}
 .cols-content .col-detail {position:relative;width:800px;}
