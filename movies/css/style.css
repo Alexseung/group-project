@@ -60,7 +60,7 @@ header .wrap{display:flex;}
 .buttonArea a{display:inline-block;padding:10px;font-weight:600;color:#fff;border:1px solid #fff;border-radius:4px;letter-spacing:0;}
 .buttonArea a + a{}
 
-.view_container{max-width:1170px;margin:0 auto;}
+.view_container{max-width:1170px;margin:0 auto;padding-bottom: 10rem;}
 [class|="sect-base"]{padding-top:40px;}
 [class|="sect-base"]:after {display:table;clear:both;content:'';}
 [class|="sect-base"] .box-image {float:left;margin-right:30px;width:185px;height:260px;}
