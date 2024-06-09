@@ -177,6 +177,11 @@ header .wrap{display:flex;}
     .theaterImg{display:none;}
 }
 
+@media all and (max-width:1200px){
+    .view_container{max-width:unset;}
+    [class|="sect-base"][class$="movie"] .box-image{width:23%;height:auto;}
+    [class|="sect-base"][class$="movie"] .box-contents{width:calc(100% - 27%);}
+}
 @media all and (max-width:1131px){
     header{height:auto;}
     header .wrap{justify-content:center;max-width:unset;}
@@ -204,7 +209,10 @@ header .wrap{display:flex;}
     .buttonArea a{font-size:calc(100vw * (16 / 750));}
 }
 
-@media all and (max-width:700px){
+@media screen and (max-width:749px){
+    [class|="sect-base"][class$="movie"] .box-contents{width:auto;}
+}
+@media screen and (max-width:700px){
     /*gnb*/
     .gnb ul li:not(:first-child){margin-left:calc(100vw * (15 / 640));}
     .gnb ul li a{font-size:calc(100vw * (16 / 640));line-height:calc(100vw * (22 / 640));}
