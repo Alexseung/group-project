@@ -210,7 +210,9 @@ header .wrap{display:flex;}
 }
 
 @media screen and (max-width:749px){
+    .view_container{padding:1rem;}
     [class|="sect-base"][class$="movie"] .box-contents{width:auto;}
+    .cols-content .col-detail {width:100%;}
 }
 @media screen and (max-width:700px){
     /*gnb*/
@@ -235,6 +237,11 @@ header .wrap{display:flex;}
     .mobile_btn{display:block;position:absolute;left:0;top:0;right:0;bottom:0;width:31px;height:31px;margin:28px 10px auto auto;}
 }
 
+@media screen and (max-width:539px){
+    [class|="sect-base"][class$="movie"] .box-image{float:none;width:100%;margin-right:0;}
+    [class|="sect-base"][class$="movie"] .thumb-image img{width:100%;height:auto;}
+    [class|="sect-base"][class$="movie"] .box-contents{float:none;width:100%;padding-top:2rem;}
+}
 
 @media screen and (max-width:480px){
     .gnb ul li a{padding:calc(100vw * (18 / 360));font-size:calc(100vw * (16 / 360));line-height:calc(100vw * (18 / 360));}
