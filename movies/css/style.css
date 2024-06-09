@@ -122,6 +122,10 @@ header .wrap{display:flex;}
 .spec dd{white-space:nowrap;text-overflow:ellipsis;overflow:hidden;}
 .spec dl:after{display:table;content:'';clear:both;}
 
+.egg-gage {display:inline-block; width:auto !important; line-height:1;}
+[class|="sect-base"] .score .egg-gage{vertical-align:middle;}
+[class|="sect-base"] .score .egg-gage {margin-top:-8px; margin-left:2px; padding-left:6px; background:url('../images/bg_writeinfo.gif') 0 12px no-repeat;}
+
 /* 라운드박스 */
 .round , .round > *{ display:inline-block; position:relative;  }
 .round {line-height:23px; font-weight:500; font-size:12px; text-align:center; vertical-align:middle;}
