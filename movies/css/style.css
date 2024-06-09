@@ -170,13 +170,13 @@ header .wrap{display:flex;}
 .round.ingray{ background:#999999; border:2px solid #999999; color:#ffffff; line-height:21px;}
 .round.ingray > *{ border:1px solid #b8b8b8;}
 
-.reviews{padding:2em;background-color:#f4f4f4;}
+.reviews{margin-top: 3rem;padding:2em;background-color:#f4f4f4;}
 .review-list{margin-bottom:2em;}
 .review-item{border-bottom:1px solid #ddd;padding:1em 0;}
 .review-item h4{margin:0;}
 .review-item p{margin:0.5em 0 0 0;}
 .review-form{background-color:white;padding:2em;border-radius:4px;}
-.review-form form{display:flex;flex-direction:column;gap:1em;}
+.review-form form{display:flex;flex-direction:column;gap:1em;margin-top: 1rem;}
 .review-form input, .review-form textarea{padding:1em;border:1px solid #ddd;border-radius:4px;}
 .review-form button{padding:1em;background-color:#f60;border:none;color:white;cursor:pointer;}
 
